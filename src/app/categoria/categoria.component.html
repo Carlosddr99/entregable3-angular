@@ -1,0 +1,9 @@
+<h1>Productos of {{categoria}}</h1>
+<div *ngFor="let product of products">
+    <div class="contenedorProduct">
+        <h4>{{product.title}}</h4>
+        <p>Price: {{product.price}}</p>
+        <button (click)="selectProduct(product.id)">More Info</button>
+    </div>
+</div>
+
